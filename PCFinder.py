@@ -28,11 +28,11 @@ if escolha == perfis[0]:
             else:
                 exit()
         if variacao == 'Intel/AMD':
-            msg='Processador: \n Placa de Video: \n' \                #NÃO TO ACHANDO SAPORRA
-                   'Memoria ram: Gb DDR4 \n Dico rigido: 1Tb \n\n Preço: \n\n Acessar o link do PC proposto?'
+            msg='Processador:Intel i3-7100 3.9 Ghz 6Mb 7ª Geração  \n Placa de Video: Radeon  RX 550 2Gb \n' \
+                   'Memoria ram: 8Gb DDR4 \n Dico rigido: 1Tb \n\n Preço: R$2.450,50 \n\n Acessar o link do PC proposto?'
             yn= ei.ynbox(msg,title1, choices=['Sim','Não'])
             if yn == 1:
-                webb.open()
+                webb.open('https://www.pichau.com.br/computadores/pichau-gamer/computador-pichau-gamer-i3-7100-amd-radeon-rx-550-2gb-8gb-hd-1tb-400w-mt-g600bk')
             else:
                 exit()
         if variacao == 'AMD/AMD':
@@ -61,11 +61,11 @@ if escolha == perfis[0]:
             else:
                 exit()
         if variacao == 'Intel/AMD':
-            msg= 'Processador: \n Placa de Video: \n'\
-                  'Memoria ram: Gb DDR4 \n Disco rigido: Tb \n\n Preço: \n\n Acessar o link do PC Proposto?'
+            msg= 'Processador: Intel i7-7700 4.2Ghz 6Mb 7ª Geração\n Placa de Video: Radeon RX 580 8Gb \n'\
+                  'Memoria ram: 8Gb DDR4 \n Disco rigido: 1Tb \n\n Preço: R$4.534,67 \n\n Acessar o link do PC Proposto?'
             yn= ei.ynbox(msg,title1, choices=['Sim','Não'])
             if yn ==1:
-                webb.open()
+                webb.open('https://www.pichau.com.br/computadores/pichau-gamer/computador-pichau-gamer-i7-7700-xfx-radeon-rx-580-gts-8gb-8gb-ddr4-hd-1tb-500w-spec-03')
             else:
                 exit()
         if variacao == 'AMD/NVIDIA':
@@ -86,27 +86,28 @@ if escolha == perfis[0]:
                 exit()
     if valor == "5.500 a 7.000":
         if variacao == 'Intel/NVIDIA':
-            msg= 'Processador: \n Placa de Video: \n'\
-                  'Memoria ram: Gb DDR4 \n Disco rigido: Tb \n\n Preço: \n\n Acessar o link do PC Proposto?'
+            msg= 'Processador: Intel i7 8700K 3.7 GHZ 8ª Geração \n Placa de Video: GeForce GTX 1070 TI 8GB \n'\
+                  'Memoria ram: 16Gb DDR4 \n Disco rigido: 1Tb \n\n Preço: R$6.572,68 \n\n Acessar o link do PC Proposto?'
             yn= ei.ynbox(msg,title1, choices=['Sim','Não'])
             if yn ==1:
-                webb.open()
+                webb.open('https://www.terabyteshop.com.br/produto/8486/PC-Gamer-T-Power-General-LVL-3-8-gen-Intel-Placa-de-Video-Memoria-HD-Fonte-Gabinete')
             else:
                 exit()
         if variacao == 'Intel/AMD':
-            msg= 'Processador: \n Placa de Video: \n'\
-                  'Memoria ram: Gb DDR4 \n Disco rigido: Tb \n\n Preço: \n\n Acessar o link do PC Proposto?'
+            msg= 'Esta configuração não atinge o valor mínimo requerido. O computador mais caro nesta configuração é:\n' \
+                 'Processador:Intel i5-740 3.5Ghz 6Mb 7ª geração \n Placa de Video: Radeon RX 580 8Gb\n'\
+                  'Memoria ram: 8Gb DDR4 \n Disco rigido: 1Tb \n\n Preço: R$4.190,50 \n\n Acessar o link do PC Proposto?'
             yn= ei.ynbox(msg,title1, choices=['Sim','Não'])
             if yn ==1:
-                webb.open()
+                webb.open('https://www.pichau.com.br/computadores/pichau-gamer/computador-pichau-gamer-i5-7400-xfx-radeon-rx-580-gts-8gb-8gb-ddr4-hd-1tb-500w-spec-03')
             else:
                 exit()
         if variacao == 'AMD/NVIDIA':
-            msg= 'Processador: \n Placa de Video: \n'\
-                  'Memoria ram: Gb DDR4 \n Disco rigido: Tb \n\n Preço: \n\n Acessar o link do PC Proposto?'
+            msg= 'Processador:  AMD Ryzen 7 1700X 3.8Ghz 20Mb \n Placa de Video: GeForce MSI GTX 1080 8GB\n'\
+                  'Memoria ram: 16Gb DDR4 \n Disco rigido: 1Tb hibrid \n\n Preço: R$ 6.422,25 \n\n Acessar o link do PC Proposto?'
             yn= ei.ynbox(msg,title1, choices=['Sim','Não'])
             if yn ==1:
-                webb.open()
+                webb.open('https://www.terabyteshop.com.br/produto/8122/PC-Gamer-T-Power-Warlord-LVL-3-AMD-Ryzen-Placa-de-Video-Memoria-HD-Fonte-Gabinete')
             else:
                 exit()
         if variacao == 'AMD/AMD':
