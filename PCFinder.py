@@ -10,7 +10,7 @@ escolha = ei.choicebox(msg, title, perfis)
 if escolha == perfis[0]:
     title = "PC Finder"
     msg = "Esoolha a faixa de valor que esta disposto a pagar"
-    perfis = ["2.500 a 4.000" , "4.000 a 5.500", "5.500 a 7.000", "7.000 a 8.500"]
+    perfis = ["2.500 a 4.000" , "4.000 a 5.500", "5.500 a 7.000"]
     title1 = 'Computador ideal'
     msg1 = "Informe qual relação de marcas você deseja? (Processador/Placa de Video)"
     variacoes_opcoes = ['Intel/NVIDIA', 'Intel/AMD', 'AMD/NVIDIA', 'AMD/AMD']
@@ -94,8 +94,8 @@ if escolha == perfis[0]:
             else:
                 exit()
         if variacao == 'Intel/AMD':
-            msg= 'Esta configuração não atinge o valor mínimo requerido. O computador mais caro nesta configuração é:\n' \
-                 'Processador:Intel i5-740 3.5Ghz 6Mb 7ª geração \n Placa de Video: Radeon RX 580 8Gb\n'\
+            msg= 'Esta configuração não atinge o valor mínimo requerido. O computador mais caro nesta configuração é:\n\n' \
+                 'Processador:Intel i5-7400 3.5Ghz 6Mb 7ª geração \n Placa de Video: Radeon RX 580 8Gb\n'\
                   'Memoria ram: 8Gb DDR4 \n Disco rigido: 1Tb \n\n Preço: R$4.190,50 \n\n Acessar o link do PC Proposto?'
             yn= ei.ynbox(msg,title1, choices=['Sim','Não'])
             if yn ==1:
@@ -111,46 +111,14 @@ if escolha == perfis[0]:
             else:
                 exit()
         if variacao == 'AMD/AMD':
-            msg= 'Processador: \n Placa de Video: \n'\
-                  'Memoria ram: Gb DDR4 \n Disco rigido: Tb \n\n Preço: \n\n Acessar o link do PC Proposto?'
+            msg= 'Processador: AMD Ryzen 7 1700X 3.8GHZ 20MB\n Placa de Video: GeForce MSI GTX 1080 8GB OC Armor \n'\
+                  'Memoria ram: 16Gb DDR4 \n Disco rigido: 1Tb \n\n Preço: R$ 6.422,25 \n\n Acessar o link do PC Proposto?'
             yn= ei.ynbox(msg,title1, choices=['Sim','Não'])
             if yn ==1:
-                webb.open()
+                webb.open('https://www.terabyteshop.com.br/produto/8122/PC-Gamer-T-Power-Warlord-LVL-3-AMD-Ryzen-Placa-de-Video-Memoria-HD-Fonte-Gabinete')
             else:
                 exit()
-    if valor == "7.000 a 8.500":
-        if variacao == 'Intel/NVIDIA':
-            msg= 'Processador: \n Placa de Video: \n'\
-                  'Memoria ram: Gb DDR4 \n Disco rigido: Tb \n\n Preço: \n\n Acessar o link do PC Proposto?'
-            yn= ei.ynbox(msg,title1, choices=['Sim','Não'])
-            if yn ==1:
-                webb.open()
-            else:
-                exit()
-        if variacao == 'Intel/AMD':
-            msg= 'Processador: \n Placa de Video: \n'\
-                  'Memoria ram: Gb DDR4 \n Disco rigido: Tb \n\n Preço: \n\n Acessar o link do PC Proposto?'
-            yn= ei.ynbox(msg,title1, choices=['Sim','Não'])
-            if yn ==1:
-                webb.open()
-            else:
-                exit()
-        if variacao == 'AMD/NVIDIA':
-            msg= 'Processador: \n Placa de Video: \n'\
-                  'Memoria ram: Gb DDR4 \n Disco rigido: Tb \n\n Preço: \n\n Acessar o link do PC Proposto?'
-            yn= ei.ynbox(msg,title1, choices=['Sim','Não'])
-            if yn ==1:
-                webb.open()
-            else:
-                exit()
-        if variacao == 'AMD/AMD':
-            msg= 'Processador: \n Placa de Video: \n'\
-                  'Memoria ram: Gb DDR4 \n Disco rigido: Tb \n\n Preço: \n\n Acessar o link do PC Proposto?'
-            yn= ei.ynbox(msg,title1, choices=['Sim','Não'])
-            if yn ==1:
-                webb.open()
-            else:
-                exit()
+
 
 if escolha == perfis[1]:
     valores = ["1.500 a 2.300", "2.300 a 3.000"]
